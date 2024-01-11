@@ -8,4 +8,10 @@ Feature: Bing search with content category filtering
     Then we get results related to phrase
     AND the results are in any form of content
 
-
+  Scenario: Filtering search results by "Video" category
+    Given the phrase "Prowly Media Monitoring"
+    AND selecting the category
+    When we search for the phrase
+    AND set the category filter to "Video"
+    Then we get videos related to phrase
+    And the results should only include video content
