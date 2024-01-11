@@ -11,3 +11,8 @@ Feature: Copilot - queries related to phrase
     Given the query find some articles about "Prowly Media Monitoring"
     When we search for the query using copilot
     Then copilot response with links to articles about "Prowly Media Monitoring"
+
+  Scenario: Check the latest updates about "Prowly Media Monitoring"
+    Given the query find the latest updates or news about "Prowly Media Monitoring"
+    When we search for the query 
+    Then we get the latest updates about "Prowly Media Monitoring" 
